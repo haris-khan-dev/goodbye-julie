@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://yicge48108e0"]
+
+[ext_resource type="PackedScene" uid="uid://c11uqyip5egpj" path="res://scenes/box.tscn" id="1_lnu2h"]
+[ext_resource type="PackedScene" uid="uid://be8qbmt0fe144" path="res://scenes/player.tscn" id="2_lbhrr"]
+[ext_resource type="PackedScene" path="res://scenes/wall.tscn" id="3_iywne"]
+
+[node name="Game" type="Node" unique_id=1095469565]
+
+[node name="Node3D" parent="." unique_id=946686108 instance=ExtResource("1_lnu2h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -4)
+
+[node name="Node3D2" parent="." unique_id=1447845144 instance=ExtResource("2_lbhrr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -3)
+
+[node name="Node3D3" parent="." unique_id=1213176554 instance=ExtResource("3_iywne")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -4)

@@ -5,4 +5,5 @@
 [node name="Node3D" type="Node3D" unique_id=946686108]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=149856996]
+transform = Transform3D(12.392582, 0, 0, 0, 1, 0, 0, 0, 13.752761, 0, 0, 0)
 mesh = SubResource("BoxMesh_on5l8")
