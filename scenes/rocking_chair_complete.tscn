@@ -50,7 +50,7 @@ _data = {
 transform = Transform3D(1, 0, 0, 0, 0.96153545, -0.27468088, 0, 0.27468088, 0.96153545, 0.65937614, 0.9231162, 0.46589017)
 
 [node name="rocking_chair_ani" parent="rocking_chair_model" unique_id=1799268775 instance=ExtResource("2_5w8ha")]
-autoplay = &"rocking_chair_ani"
+autoplay = &"RESET"
 
 [node name="collision_rocking_chair" type="CollisionShape3D" parent="." unique_id=1372163958]
 transform = Transform3D(1, 0, 0, 0, 0.18691844, 0.98237544, 0, -0.98237544, 0.18691844, 0.65937614, 0.9231162, 0.46589017)
@@ -58,4 +58,4 @@ shape = SubResource("ConvexPolygonShape3D_3o1nm")
 
 [node name="rocking_chair_collision_ani" type="AnimationPlayer" parent="collision_rocking_chair" unique_id=1524322444]
 libraries/ = SubResource("AnimationLibrary_ojraj")
-autoplay = &"animation_rocking_chair_collison"
+autoplay = &"RESET"
