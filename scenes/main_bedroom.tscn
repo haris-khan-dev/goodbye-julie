@@ -1,8 +1,8 @@
-[gd_scene format=3 uid="uid://b2le4dmhe0gw3"]
+[gd_scene format=3 uid="uid://bx3qcuu6lsovh"]
 
 [ext_resource type="PackedScene" uid="uid://cviu81j0ajqhs" path="res://models/main-bedroom/main-bedroom.blend" id="1_5kw7w"]
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="2_lv2ef"]
-[ext_resource type="PackedScene" uid="uid://d4g72byauyk4i" path="res://scenes/julie_room.tscn" id="3_vsisv"]
+[ext_resource type="PackedScene" path="res://scenes/julie_room.tscn" id="3_vsisv"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_lv2ef"]
 
@@ -21,7 +21,11 @@ shape = SubResource("WorldBoundaryShape3D_lv2ef")
 [node name="ProtoController" parent="." unique_id=2070564422 instance=ExtResource("2_lv2ef")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.24675706, 0)
 
+[node name="Mesh" parent="ProtoController" index="0" unique_id=308648201]
+transform = Transform3D(1, 0, 0, 0, 2.9054792, 0, 0, 0, 1, -0.93867874, 2.540976, 0.07939851)
+
 [node name="Camera3D" parent="ProtoController/Head" parent_id_path=PackedInt32Array(2070564422, 1766937400) index="0" unique_id=113091063]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.746092, 0)
 fov = 60.0
 
 [node name="main-bedroom" parent="." unique_id=282690555 instance=ExtResource("1_5kw7w")]
@@ -33,7 +37,7 @@ transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 1
 [node name="Julie Room" parent="." unique_id=488065296 instance=ExtResource("3_vsisv")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 38.765648, -0.012016773, 14.403564)
 
-[node name="CSGBox3D" parent="Julie Room/Floor2" parent_id_path=PackedInt32Array(488065296, 1859047266) index="0" unique_id=327731123]
+[node name="CSGBox3D" parent="Julie Room/Floor" parent_id_path=PackedInt32Array(488065296, 1859047266) index="0" unique_id=327731123]
 material_override = SubResource("StandardMaterial3D_vsisv")
 
 [editable path="ProtoController"]

@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Goodbye Julie (iwo-branch)"
-run/main_scene="uid://b2le4dmhe0gw3"
+run/main_scene="uid://bx3qcuu6lsovh"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
